@@ -1,0 +1,17 @@
+apply plugin: 'war'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'org.springframework:spring-webmvc:4.2.4.RELEASE'
+    compile 'io.reactivex:rxjava:1.1.1'
+    compile 'org.projectlombok:lombok:1.16.6'
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.7.1-1'
+
+    testCompile 'junit:junit:4.12'
+}
